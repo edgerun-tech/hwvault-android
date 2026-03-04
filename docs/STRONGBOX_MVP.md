@@ -33,6 +33,12 @@ Compatible with hwvault resolver HTTP second-factor backend:
 - poll: `GET /v1/approvals/{requestId}`
 - decision submit (android side): `POST /v1/approvals/{requestId}/decision`
 
+## MVP limitations
+
+- This PR is a scaffold, not a full app integration.
+- Backend verification logic is not included in this repo yet.
+- BiometricPrompt gating and auth-bound key use are not enforced by default in this MVP.
+
 ## Production hardening TODO
 
 - Verify StrongBox attestation chain server-side and pin expected root set.
